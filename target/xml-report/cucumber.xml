@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="29.371">
+    <testcase classname="N11 Favori Ürün Senaryosu" name="Favori urun" time="29.15">
+        <failure message="Unable to locate element: [class=&quot;btnSignIn&quot;]&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'LAPTOP-8OR82V02', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [12c8d198-7331-4132-bbf0-71a96d702235, findElement {using=css selector, value=[class=&quot;btnSignIn&quot;]}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220519220738, moz:debuggerAddress: localhost:51633, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 30844, moz:profile: C:\Users\YKSEL~1\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:51633/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 12c8d198-7331-4132-bbf0-71a96d702235" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given n11 com sitesi acilir.................................................passed
+And Ana sayfanin acildigi kontrol edilir....................................passed
+And Ana sayfanin header bolumunde giris buttonuna basilir...................passed
+Then Giris yap sayfanin acildigi dogrulanir.................................passed
+And Giris yap sayfasinda e posta adresi input box ina e posta adresi girilir..passed
+Then Giris yap sayfasinda şifre input box ina sifre girilir.................passed
+And Giris yap sayfasinda giris yap butonuna basilir.........................failed
+And kullanici Login oldugunu dogrular.......................................skipped
+Then kullanici arama kutusuna	iphone kelimesi yazar ve arama tusuna basar ..skipped
+And iphone kelimesi aratildiği dogrulanir...................................skipped
+Then Arama sonuçlari sayfasindan ikinci sayfa açilir........................skipped
+And 2. sayfanin açildiği kontrol edilir.....................................skipped
+And Sayfadaki 3. ürün favorilere eklenir....................................skipped
+Then Hesabim istek Listem Favorilerim sayfasina gidilir.....................skipped
+Then “Favorilerim” sayfasi açildiği kontrol edilir..........................skipped
+Then Eklenen ürün favorilerden silinir ve silme işlemi kontrol edilir.......skipped
+Then Üye çikiş işlemi yapilir...............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: [class="btnSignIn"]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'LAPTOP-8OR82V02', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [12c8d198-7331-4132-bbf0-71a96d702235, findElement {using=css selector, value=[class="btnSignIn"]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220519220738, moz:debuggerAddress: localhost:51633, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 30844, moz:profile: C:\Users\YKSEL~1\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:51633/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 12c8d198-7331-4132-bbf0-71a96d702235
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at stepdefinitions.FavoriUrun.giris_yap_sayfasinda_giris_yap_butonuna_basilir(FavoriUrun.java:75)
+	at ✽.Giris yap sayfasinda giris yap butonuna basilir.(file:///C:/Users/yüksel/trash/n11-yukselAvci/src/test/resources/features/n11.feature:12)
+]]></failure>
+    </testcase>
+</testsuite>
